@@ -17,6 +17,12 @@ def main():
     
 
     # Create deck
+    values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+    suit = ["C", "D", "H", "S"]
+    deck = []
+    for s in suit:
+        for v in values:
+            deck.append(v+s)
 
     # Game loop:
 
