@@ -6,6 +6,8 @@ class Player():
         self.button = False
         self.big_blind = False
         self.small_blind = False
+        self.bet = 0
+        self.hand = []
 
     def set_button(self):
         self.button = True
@@ -15,6 +17,18 @@ class Player():
 
     def set_small_blind(self):
         self.small_blind = True
+    
+    def add_bet(self, value):
+        self.bet += value
+        self.chips -= value
 
-    def set_me(self):
-        self.me = True
+    def add_card(self, card):
+        self.hand.append(card)
+
+    def reset(self):
+        self.hand = []
+        self.bet = 0
+
+    def add_chips(self, value):
+        self.chips += value
+
