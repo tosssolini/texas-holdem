@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "texas-holdem"
+version = "0.1.0"
+description = ""
+authors = ["Øyvind Torgersrud <oyvind.torgersrud@ngi.no>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "texas_holdem"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.25.1"
+matplotlib = "^3.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+isort = "^5.12.0"
+pytest = "^7.4.0"
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
